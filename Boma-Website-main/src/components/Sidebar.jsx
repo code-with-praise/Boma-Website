@@ -67,20 +67,6 @@ export default function Sidebar({ activePage, onNavigate, isOpen, onClose, isCol
             </a>
           ))}
         </nav>
-
-        {/* RSVP Button */}
-        <div className="sidebar__footer">
-          <button
-            type="button"
-            className="btn-primary sidebar__rsvp"
-            onClick={() => {
-              onNavigate('thank-you')
-              onClose()
-            }}
-          >
-            RSVP NOW
-          </button>
-        </div>
       </aside>
     </>
   )

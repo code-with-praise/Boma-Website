@@ -18,9 +18,9 @@ export default function ChurchProgram() {
 
   const programItems = [
     { time: '11:00 AM', title: 'Opening Prayer' },
-    { time: '11:10 AM', title: 'Praise of Worship' },
+    { time: '11:03 AM', title: 'Praise of Worship' },
     {
-      time: '11:30 AM',
+      time: '11:11 AM',
       title: 'Processional Hymn',
       hymn: {
         title: 'We Come Before Your Presence',
@@ -78,38 +78,44 @@ We bow before your throne
 We bow before!`
       }
     },
-    { time: '11:45 AM', title: 'Giving of the Bride' },
-    { time: '11:55 AM', title: 'Charge to Bride & Groom / Charge to the Congregation' },
-    { time: '12:05 PM', title: 'Declaration of Vows, Exchanging of Rings & Pronouncement' },
-    { time: '12:20 PM', title: 'Communion' },
-    { time: '12:30 PM', title: 'Pastoral Blessing (Deut. 28:1-13) Presentation' },
-    { time: '12:40 PM', title: 'Thanksgiving' },
-    { time: '12:50 PM', title: 'Signing / Presentation of the Marriage Certificate & Praise' },
-    { time: '12:55 PM', title: 'The Word' },
-    { time: '1:00 PM', title: 'Announcement' },
+    { time: '11:14 AM', title: 'Giving of the Bride' },
+    { time: '11:17 AM', title: 'Charge to Bride & Groom / Charge to the Congregation' },
+    { time: '11:20 AM', title: 'Declaration of Vows, Exchanging of Rings & Pronouncement' },
+    { time: '11:25 AM', title: 'Communion' },
+    { time: '11:30 AM', title: 'Pastoral Blessing (Deut. 28:1-13) Presentation' },
+    { time: '11:35 AM', title: 'Thanksgiving' },
+    { time: '11:40 AM', title: 'Signing / Presentation of the Marriage Certificate & Praise' },
+    { time: '11:45 AM', title: 'The Word' },
+    { time: '12:00 PM', title: 'Announcement' },
     {
-      time: '1:05 PM',
+      time: '12:03 PM',
       title: 'Recessional Hymn',
       hymn: {
-        title: 'Praise Him! Praise Him!',
-        lyrics: `Praise Him! Praise Him! Jesus,
-our blessed Redeemer!
-Sing, O Earth, His wonderful
-love proclaim!
-Hail Him! Hail Him! Highest
-archangels in glory;
-Strength and honor give to His
-holy Name!
+        title: 'Praise to the Lord, the Almighty',
+        lyrics: `1. Praise to the Lord, the Almighty,
+  the King of creation!
+O my soul, praise Him, for He is thy
+  health and salvation!
+    All ye who hear,
+Now to His temple draw near;
+Sing now in glad adoration!
 
-Like a shepherd, Jesus will
-guard His children,
-In His arms He carries them all
-day long;
-Praise Him! Praise Him! Tell of
-His excellent greatness;
-Praise Him! Praise Him! Ever
-in joyful song!`
-      }
+2. Praise to the Lord, who o'er all
+  things so wondrously reigneth,
+Who, as on wings of an eagle,
+  uplifteth, sustaineth.
+    Hast thou not seen
+How thy desires all have been
+Granted in what He ordaineth?
+
+3. Praise to the Lord, who hath fearfully,
+  wondrously, made thee!
+Health hath vouchsafed and, when
+  heedlessly falling, hath stayed thee.
+ What need or grief
+Ever hath failed of relief?
+Wings of His mercy did shade thee.`
+}
     },
   ]
 
