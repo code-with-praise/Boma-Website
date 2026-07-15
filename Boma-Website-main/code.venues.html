@@ -1,0 +1,390 @@
+<!DOCTYPE html><html lang="en" class="scroll-smooth" style=""><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "surface": "#fbf9f8",
+                "on-surface": "#1b1c1c",
+                "secondary": "#7b5455",
+                "inverse-on-surface": "#f2f0f0",
+                "on-secondary-container": "#7a5354",
+                "primary-fixed-dim": "#e9c349",
+                "inverse-surface": "#303030",
+                "inverse-primary": "#e9c349",
+                "primary-fixed": "#ffe088",
+                "error": "#ba1a1a",
+                "surface-container": "#efeded",
+                "primary": "#735c00",
+                "on-secondary": "#ffffff",
+                "on-tertiary": "#ffffff",
+                "surface-container-low": "#f5f3f3",
+                "outline": "#7f7663",
+                "surface-variant": "#e4e2e2",
+                "surface-container-lowest": "#ffffff",
+                "on-error": "#ffffff",
+                "on-tertiary-fixed-variant": "#464745",
+                "on-primary-fixed": "#241a00",
+                "on-primary-container": "#554300",
+                "primary-container": "#d4af37",
+                "on-tertiary-fixed": "#1a1c1a",
+                "on-tertiary-container": "#444543",
+                "tertiary-container": "#b3b3b0",
+                "surface-container-highest": "#e4e2e2",
+                "surface-container-high": "#eae8e7",
+                "secondary-container": "#fecbcb",
+                "error-container": "#ffdad6",
+                "tertiary-fixed": "#e3e2e0",
+                "surface-tint": "#735c00",
+                "on-secondary-fixed-variant": "#613d3e",
+                "outline-variant": "#d0c5af",
+                "on-primary": "#ffffff",
+                "secondary-fixed": "#ffdad9",
+                "on-secondary-fixed": "#2f1314",
+                "on-primary-fixed-variant": "#574500",
+                "surface-dim": "#dbd9d9",
+                "surface-bright": "#fbf9f8",
+                "on-error-container": "#93000a",
+                "tertiary-fixed-dim": "#c7c6c4",
+                "tertiary": "#5e5f5d",
+                "background": "#fbf9f8",
+                "on-surface-variant": "#4d4635",
+                "secondary-fixed-dim": "#ecbaba",
+                "on-background": "#1b1c1c"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+            },
+            "spacing": {
+                "section-gap": "120px",
+                "margin-mobile": "20px",
+                "margin-desktop": "64px",
+                "unit": "8px",
+                "gutter": "24px",
+                "container-max": "1120px"
+            },
+            "fontFamily": {
+                "label-caps": ["Plus Jakarta Sans"],
+                "display-lg-mobile": ["Playfair Display"],
+                "body-lg": ["Plus Jakarta Sans"],
+                "headline-md": ["Playfair Display"],
+                "headline-sm": ["Playfair Display"],
+                "display-lg": ["Playfair Display"],
+                "body-md": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                "display-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          }
+        }
+      }
+    }catch(_e){}</script><meta charset="utf-8"></head><body class="font-body-md text-on-surface">
+<!-- Side Navigation Menu (As per Shared Components JSON) -->
+<aside id="side-nav" class="hidden md:flex h-full w-80 fixed left-0 top-0 z-50 flex-col p-gutter gap-unit bg-surface shadow-xl border-r border-outline-variant/30 transform -translate-x-full transition-transform duration-500 ease-in-out transition-all">
+<div class="flex items-center gap-4 mb-10"><button class="p-2 hover:bg-surface-variant/50 rounded-lg transition-colors" id="side-menu-collapse">
+  <span class="material-symbols-outlined">menu</span>
+</button>
+
+<div class="">
+<h2 class="font-headline-sm text-headline-sm text-primary">Boma &amp; Femi</h2>
+
+</div>
+</div>
+<nav class="flex flex-col gap-2"><a class="text-on-surface-variant px-4 py-3 hover:bg-surface-variant/50 transition-all rounded-xl flex items-center gap-3" href="#">
+<span class="material-symbols-outlined">home</span> Home
+            </a>
+<a class="text-on-surface-variant px-4 py-3 hover:bg-surface-variant/50 transition-all rounded-xl flex items-center gap-3" href="#">
+<span class="material-symbols-outlined">auto_stories</span> Our Story
+            </a>
+<a class="text-on-surface-variant px-4 py-3 hover:bg-surface-variant/50 transition-all rounded-xl flex items-center gap-3" href="#">
+<span class="material-symbols-outlined">groups</span> Bridal Party
+            </a>
+<a class="text-on-surface-variant px-4 py-3 hover:bg-surface-variant/50 transition-all rounded-xl flex items-center gap-3" href="#">
+<span class="material-symbols-outlined">restaurant</span> Food &amp; Drinks
+            </a>
+<a class="text-primary font-bold bg-primary-container/20 rounded-xl px-4 py-3 flex items-center gap-3" href="#">
+<span class="material-symbols-outlined">location_on</span> Venues
+            </a>
+<a class="text-on-surface-variant px-4 py-3 hover:bg-surface-variant/50 transition-all rounded-xl flex items-center gap-3" href="#">
+<span class="material-symbols-outlined">church</span> Church Program
+            </a>
+<a class="text-on-surface-variant px-4 py-3 hover:bg-surface-variant/50 transition-all rounded-xl flex items-center gap-3" href="#">
+<span class="material-symbols-outlined">photo_library</span> Gallery
+            </a>
+<a class="text-on-surface-variant px-4 py-3 hover:bg-surface-variant/50 transition-all rounded-xl flex items-center gap-3" href="#">
+<span class="material-symbols-outlined">favorite</span> Thank You
+            </a></nav>
+<div class="mt-auto pt-10">
+
+</div>
+</aside>
+<!-- Mobile Top Bar -->
+<header class="md:hidden glass-nav fixed top-0 w-full z-50 flex justify-between items-center px-6 h-16 border-b border-outline-variant/30">
+<h1 class="font-headline-sm text-headline-sm text-primary">B&amp;F</h1>
+<button class="p-2" id="menu-toggle">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<!-- Desktop Top Bar Anchor (Matching TopNavBar JSON) -->
+<div class="hidden md:flex justify-between items-center px-margin-desktop h-20 max-w-container-max mx-auto sticky top-0 z-40 glass-nav border-b border-outline-variant/30">
+<div class="font-headline-md text-headline-md text-primary">B&amp;F</div>
+<div class="flex gap-8">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">Home</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">Our Story</a>
+<a class="font-label-caps text-label-caps text-primary border-b border-primary pb-1" href="#">Venues</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">Gallery</a>
+
+</div>
+
+</div>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pt-24 md:pt-32 pb-section-gap">
+<!-- Header Section -->
+<header class="mb-section-gap text-center max-w-2xl mx-auto">
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-6">The Gathering</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant italic">We cannot wait to celebrate this new chapter with you at these meaningful locations.</p>
+<div class="w-24 h-px bg-primary-container mx-auto mt-8"></div>
+</header>
+<!-- Section 1: Church Ceremony -->
+<section class="mb-section-gap grid md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 order-2 md:order-1">
+<span class="font-label-caps text-label-caps text-primary mb-2 block">HOLY MATRIMONY</span>
+<h3 class="font-headline-md text-headline-md mb-4">Church Ceremony</h3>
+<div class="flex items-start gap-3 mb-6">
+<span class="material-symbols-outlined text-primary-container mt-1">church</span>
+<div>
+<p class="font-body-lg font-bold mb-1">Living Faith Church, Winners Chapel</p>
+<p class="font-body-md text-on-surface-variant">70 Olugbede street, Egbeda, Lagos State.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 mb-8">
+<span class="material-symbols-outlined text-primary-container">schedule</span>
+<p class="font-body-md text-on-surface-variant">Saturday, 11:00 AM&nbsp;</p>
+</div>
+
+</div>
+<div class="md:col-span-7 order-1 md:order-2">
+<div class="venue-card relative rounded-xl overflow-hidden shadow-[0_30px_30px_rgba(212,175,55,0.08)] bg-surface-container-low h-[450px]">
+<div class="absolute inset-0 opacity-20 pointer-events-none mix-blend-multiply">
+<img class="w-full h-full object-cover" data-alt="A delicate botanical illustration of watercolor ivory roses and gold eucalyptus leaves framing the corner of a sophisticated map interface. The art style is light and ethereal, matching a luxury wedding stationery theme with soft textures and airy white space." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB80ULz7tBTu4zpfZCuwhwZy_fk5doAqDWLei6irKmXydjY_KeYc_8jbE2bldnwLSMY6P_u_tKO2MgTdkhnXoyukhDd1-FgFr4xTCG_MNc_dI0nQNPs4l3EC4ERozcFxFAs3J5erJUP_4SPjSm6A4-bdB2aacfVOSLiMA5D0J1F6iukyS3tuiVE8TkRCdsuBdXyaGjSHtglwMQJvhyY1Up2f5ujL1BLRZw8w9ALh84Jl1SiT9mSisMVyw">
+</div>
+<!-- Map Placeholder -->
+<div class="w-full h-full p-4">
+<div class="w-full h-full rounded-lg overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
+<div class="w-full h-full bg-surface-variant flex items-center justify-center relative overflow-hidden" data-location="Living Faith Church Egbeda Lagos">
+<img class="w-full h-full object-cover" data-alt="A clean, minimalist 3D isometric map representation of Lagos, Nigeria, highlighting a specific elegant wedding venue location with a champagne gold pin. The map features soft pastel tones, high-end architectural rendering, and generous whitespace, embodying an ethereal and airy luxury design aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbJO_XO14LbXhDXSOExXYB5WeHW4usQaXDIK2LViFCZ5tqaIA4T4sJya3l-FudCSjaayhDBJEfxXUWxpYjcqDJkOvkGeTzdhYOwaTN1X3omskxag8SGSyVoV8omWtkTv0aZ1C5eSIBZA5mc3RvhoJHMSFd89yYFIP9bgT4l7voCRnzCL7qYKGgFI8fELFueuYcIkaZ7jVpWy2AgaSBoN1C5u7-JfNl2xTaPGJRFaeveivn4yl8P8447tNTfGury_wuG4Ub1PNzWnFPVL8">
+<div class="absolute inset-0 bg-primary/5"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-5xl animate-bounce" style="font-variation-settings: &quot;FILL&quot; 1;">location_on</span>
+<div class="bg-white px-4 py-2 rounded shadow-xl mt-2 border border-primary-container/20">
+<p class="font-label-caps text-[10px]">LIVING FAITH CHURCH</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Reception -->
+<section class="mb-section-gap grid md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-7">
+<div class="venue-card relative rounded-xl overflow-hidden shadow-[0_30px_30px_rgba(212,175,55,0.08)] bg-surface-container-low h-[450px]">
+<div class="w-full h-full p-4">
+<div class="w-full h-full rounded-lg overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
+<div class="w-full h-full bg-surface-variant flex items-center justify-center relative" data-location="Lagos Nigeria Wedding Venue">
+<img class="w-full h-full object-cover" data-alt="A sophisticated map visual featuring the upscale areas of Lagos near a luxury event center. The map is rendered in a high-contrast charcoal and gold editorial style, with elegant line work and a minimalist interface. The lighting in the render is cinematic and soft, focusing on a specific reception destination." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTwz27C29uAAQiyy0ia6Ls2pvCGAuCGxREb_t4iit3sh8r4A0bnsb_W8x5JD9ed0pFG6BP5k_ZvLG4_qcEbCoBdZZKbBLkWPVE2udnPSP-jrASCfyTYQatYPcH2HxsTNEOTPne7fYCJkT_mkPsvcLjoo3AqIjekJSs6fxi_sU2E6Wd_yTd3Do2j3urp4euIOXt3w3yRJPTLwJRjOPrPvye6loHY3Qgsu__qbnctmaVOzFjlnnbQZbOEMC47M11_RCmwOot1im5eFabAoM">
+<div class="absolute inset-0 bg-primary/5"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+
+<div class="bg-white px-4 py-2 rounded shadow-xl mt-2 border border-primary-container/20 text-center">
+<p class="font-label-caps text-[10px]">Pertience Hall</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md:col-span-5 md:pl-12">
+<span class="font-label-caps text-label-caps text-primary mb-2 block">THE PARTY</span>
+<h3 class="font-headline-md text-headline-md mb-4">Reception</h3>
+<div class="flex items-start gap-3 mb-6">
+<span class="material-symbols-outlined text-primary-container mt-1">restaurant</span>
+<div>
+<p class="font-body-lg font-bold mb-1">Pertinence Hall</p>
+<p class="font-body-md text-on-surface-variant">1 Tinuola Close,<br class="">Animashaun, Akowonjo,<br class="">Egbeda, Lagos State.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 mb-8">
+<span class="material-symbols-outlined text-primary-container">schedule</span>
+<p class="font-body-md text-on-surface-variant">Saturday, 18th July 2026&nbsp;<div class="">2:00 PM</div></p>
+</div>
+
+</div>
+</section>
+<!-- Section 3: Traditional Wedding -->
+<section class="grid md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 order-2 md:order-1">
+<span class="font-label-caps text-label-caps text-primary mb-2 block">HERITAGE &amp; TRADITION</span>
+<h3 class="font-headline-md text-headline-md mb-4">Traditional Wedding</h3>
+<div class="flex items-start gap-3 mb-6">
+<span class="material-symbols-outlined text-primary-container mt-1">festival</span>
+<div>
+<p class="font-body-lg font-bold mb-1">Pertinence Hall</p>
+<p class="font-body-md text-on-surface-variant">1 Tinuola Close,<br class="" style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ;">Animashaun, Akowonjo,<br class="" style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ;">Egbeda, Lagos State.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 mb-8">
+<span class="material-symbols-outlined text-primary-container">schedule</span>
+<p class="font-body-md text-on-surface-variant">Friday, 17th July 2026&nbsp;<div class="">2:00 PM</div></p>
+</div>
+<div class="p-4 border-l-2 border-primary-container bg-surface-container-lowest/50 rounded-r-lg">
+<p class="font-label-caps text-[10px] text-primary mb-1">Color Of The Day</p>
+<p class="font-body-md italic text-on-surface-variant">Burgundy &amp; Gold</p>
+</div>
+</div>
+<div class="md:col-span-7 order-1 md:order-2">
+<div class="venue-card relative rounded-xl overflow-hidden shadow-[0_30px_30px_rgba(212,175,55,0.08)] bg-surface-container-low h-[450px]">
+<div class="w-full h-full p-4">
+<div class="w-full h-full rounded-lg overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
+<div class="w-full h-full bg-surface-variant flex items-center justify-center relative" data-location="Lagos Traditional Wedding Center">
+<img class="w-full h-full object-cover" data-alt="A stylized aerial artistic view of a Lagos neighborhood where a traditional wedding is being held. The map is treated with a golden wash and delicate hand-drawn botanical overlays. The aesthetic is clean, warm, and deeply rooted in a romantic cultural celebration style with subtle Nigerian pattern motifs in the background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEkRFH-qrUoXUVuZWfrmINxF5V7LK61U63m2gJf4EiES949PI0Aq31oIThLw1NzYjfg2a2O0I4DTZMRkfJb3YN9QsOOMnq0M9Y4KcoZsXlLHHn4PaqJIH4BGgj9vcIZJqHv2hWAs-B6VRfMRPooypRPwDM4-rNK2CgEzb-5JvgEzGz2MVi9xhGTjFieUey6cVc4L2PrmpdCdd7xyIxHDPIatTPGGskVTvwcltWwrBZo5fEFz5WCvn3PcH_JAfv7xYu33T3cYW4sTyBSec">
+<div class="absolute inset-0 bg-primary/5"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+
+<div class="bg-white px-4 py-2 rounded shadow-xl mt-2 border border-primary-container/20">
+<p class="font-label-caps text-[10px]">TRADITIONAL CEREMONY</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (As per Shared Components JSON) -->
+<footer class="w-full py-section-gap bg-surface-container-low border-t border-outline-variant/30 flex flex-col items-center justify-center gap-unit px-margin-desktop text-center">
+<div class="font-headline-sm text-headline-sm text-on-surface mb-4">Boma &amp; Femi</div>
+<div class="flex gap-8 mb-8">
+
+
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">Contact Us</a>
+</div>
+<div class="w-12 h-px bg-outline-variant mb-4"></div>
+<p class="font-label-caps text-label-caps text-on-surface-variant opacity-80">© 2026 Boma &amp; Femi<div class="">Designed by Soiree Events</div></p>
+</footer>
+<!-- Overlay for mobile nav -->
+<div class="fixed inset-0 bg-black/20 backdrop-blur-sm z-40 hidden transition-opacity duration-300" id="nav-overlay"></div>
+<script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const sideNav = document.getElementById('side-nav');
+        const navOverlay = document.getElementById('nav-overlay');
+
+        function toggleNav() {
+            const isOpen = sideNav.classList.contains('translate-x-0');
+            if (isOpen) {
+                sideNav.classList.replace('translate-x-0', '-translate-x-full');
+                navOverlay.classList.add('hidden');
+                document.body.style.overflow = '';
+            } else {
+                sideNav.classList.remove('hidden');
+                // Small delay to allow 'hidden' removal before transition
+                setTimeout(() => {
+                    sideNav.classList.replace('-translate-x-full', 'translate-x-0');
+                    navOverlay.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden';
+                }, 10);
+            }
+        }
+
+        menuToggle.addEventListener('click', toggleNav);
+        navOverlay.addEventListener('click', toggleNav);
+
+        // Simple Parallax Effect for Venue Cards
+        window.addEventListener('scroll', () => {
+            const cards = document.querySelectorAll('.venue-card');
+            cards.forEach(card => {
+                const speed = 0.05;
+                const rect = card.getBoundingClientRect();
+                const scrollPos = window.innerHeight - rect.top;
+                if (scrollPos > 0 && rect.bottom > 0) {
+                    const yPos = -(scrollPos * speed);
+                    // Subtle internal parallax for imagery would go here
+                }
+            });
+        });
+    </script>
+
+<script class="">
+(function() {
+  const sideNav = document.getElementById('side-nav');
+  const collapseBtn = document.getElementById('side-menu-collapse');
+  const navLinks = sideNav.querySelectorAll('nav a');
+  const logoContainer = sideNav.querySelector('.flex.items-center.gap-4.mb-10 > div');
+  const rsvpBtn = sideNav.querySelector('.mt-auto button');
+
+  collapseBtn.addEventListener('click', () => {
+    const isCollapsed = sideNav.classList.contains('w-20');
+    
+    if (isCollapsed) {
+      // Expand
+      sideNav.classList.replace('w-20', 'w-80');
+      if (logoContainer) logoContainer.classList.remove('hidden');
+      if (rsvpBtn) rsvpBtn.textContent = 'RSVP NOW';
+      navLinks.forEach(link => {
+        const textNode = Array.from(link.childNodes).find(node => node.nodeType === Node.TEXT_NODE && node.textContent.trim() !== '');
+        if (textNode) link.style.fontSize = '';
+        link.classList.remove('justify-center');
+      });
+    } else {
+      // Collapse
+      sideNav.classList.replace('w-80', 'w-20');
+      if (logoContainer) logoContainer.classList.add('hidden');
+      if (rsvpBtn) rsvpBtn.textContent = 'RSVP';
+      navLinks.forEach(link => {
+        // Hide text by setting font size to 0 or using a class if available
+        link.style.overflow = 'hidden';
+        link.classList.add('justify-center');
+        // We target the text nodes specifically to hide them while keeping icons
+        Array.from(link.childNodes).forEach(node => {
+          if (node.nodeType === Node.TEXT_NODE) {
+             // We can't easily hide text nodes without wrapping, so we use a CSS trick on the parent
+          }
+        });
+      });
+    }
+  });
+
+  // Add CSS to handle text hiding when parent is collapsed
+  const style = document.createElement('style');
+  style.textContent = `
+    #side-nav.w-20 nav a {
+      font-size: 0 !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+    #side-nav.w-20 nav a span {
+      font-size: 24px !important;
+      margin: 0 !important;
+    }
+    #side-nav.w-20 .mt-auto {
+      padding-top: 20px !important;
+    }
+    #side-nav.w-20 .mt-auto button {
+      font-size: 10px !important;
+      padding: 8px 4px !important;
+    }
+  `;
+  document.head.appendChild(style);
+})();
+</script></body></html>

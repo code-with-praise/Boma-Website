@@ -1,0 +1,352 @@
+<!DOCTYPE html><html class="light" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Boma &amp; Femi | 18.07.26</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed-dim": "#ecbaba",
+                        "primary-container": "#d4af37",
+                        "surface-bright": "#fbf9f8",
+                        "tertiary-container": "#b3b3b0",
+                        "error-container": "#ffdad6",
+                        "tertiary": "#5e5f5d",
+                        "on-background": "#1b1c1c",
+                        "on-primary-fixed": "#241a00",
+                        "secondary": "#7b5455",
+                        "on-secondary-fixed-variant": "#613d3e",
+                        "tertiary-fixed": "#e3e2e0",
+                        "on-secondary": "#ffffff",
+                        "secondary-container": "#fecbcb",
+                        "on-surface-variant": "#4d4635",
+                        "surface-container-high": "#eae8e7",
+                        "on-tertiary": "#ffffff",
+                        "outline-variant": "#d0c5af",
+                        "surface-tint": "#735c00",
+                        "on-primary-fixed-variant": "#574500",
+                        "error": "#ba1a1a",
+                        "surface": "#fbf9f8",
+                        "background": "#fbf9f8",
+                        "on-tertiary-container": "#444543",
+                        "outline": "#7f7663",
+                        "primary": "#735c00",
+                        "surface-variant": "#e4e2e2",
+                        "on-primary-container": "#554300",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-dim": "#dbd9d9",
+                        "surface-container": "#efeded",
+                        "on-tertiary-fixed": "#1a1c1a",
+                        "on-secondary-container": "#7a5354",
+                        "on-primary": "#ffffff",
+                        "on-error": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "container-max": "1120px",
+                        "unit": "8px",
+                        "section-gap": "120px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "headline-sm": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "label-caps": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-md": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                        "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "display-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { scroll-behavior: smooth; background-color: #fbf9f8; }
+        .glass-panel { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        .matted-photo { border: 1px inset rgba(251, 249, 246, 0.5); }
+        .timeline-line { width: 1px; background-color: #d4af37; opacity: 0.3; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+        .active-tab { @apply bg-primary-container text-on-primary-container rounded-full px-6 py-3 font-semibold; }
+    </style>
+</head>
+<body class="font-body-md text-on-background overflow-x-hidden">
+<!-- Top Navigation (Mobile Toggle & Desktop Anchor) -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-primary-container/30 shadow-[0_30px_30px_-15px_rgba(212,175,55,0.08)]">
+
+</header>
+<!-- Side Navigation Shell (Mandatory for Destination Page) -->
+<aside class="h-full w-80 fixed left-0 top-0 z-[60] bg-surface-bright dark:bg-surface-dim shadow-xl transition-all duration-300 md:translate-x-0 flex flex-col p-6 gap-2 border-r border-outline-variant/30" id="sideNav">
+<div class="flex flex-col items-center gap-4 mb-8"><button id="sidebarCollapse" class="absolute -right-4 top-10 w-8 h-8 bg-primary-container text-on-primary-container rounded-full shadow-lg flex items-center justify-center z-[70] hover:scale-110 active:scale-95 transition-all border border-surface-bright">
+  <span class="material-symbols-outlined text-sm">chevron_left</span>
+</button>
+
+<div class="text-center">
+<h2 class="font-display-lg-mobile text-headline-md text-primary">Boma &amp; Femi</h2>
+<p class="font-body-md text-secondary italic">#BFForever2026</p>
+</div>
+</div>
+<nav class="flex flex-col gap-1 flex-grow overflow-y-auto">
+<a class="flex items-center gap-4 bg-primary-container text-on-primary-container rounded-full px-6 py-3 font-semibold" href="#">
+<span class="material-symbols-outlined">home</span>Home
+            </a>
+<a class="flex items-center gap-4 text-secondary hover:bg-secondary-container/20 rounded-full px-6 py-3 transition-all hover:translate-x-2" href="#">
+<span class="material-symbols-outlined">auto_stories</span>Our Story
+            </a>
+
+
+<a class="flex items-center gap-4 text-secondary hover:bg-secondary-container/20 rounded-full px-6 py-3 transition-all hover:translate-x-2" href="#">
+<span class="material-symbols-outlined">group</span>Bridal Party
+            </a>
+<a class="flex items-center gap-4 text-secondary hover:bg-secondary-container/20 rounded-full px-6 py-3 transition-all hover:translate-x-2" href="#">
+<span class="material-symbols-outlined">restaurant</span>Food &amp; Drinks
+            </a>
+<a class="flex items-center gap-4 text-secondary hover:bg-secondary-container/20 rounded-full px-6 py-3 transition-all hover:translate-x-2" href="#">
+<span class="material-symbols-outlined">location_on</span>Venues
+            </a>
+<a class="flex items-center gap-4 text-secondary hover:bg-secondary-container/20 rounded-full px-6 py-3 transition-all hover:translate-x-2" href="#">
+<span class="material-symbols-outlined">church</span>Church Ceremony
+            </a>
+<a class="flex items-center gap-4 text-secondary hover:bg-secondary-container/20 rounded-full px-6 py-3 transition-all hover:translate-x-2" href="#">
+<span class="material-symbols-outlined">photo_library</span>Gallery
+            </a>
+<a class="flex items-center gap-4 text-secondary hover:bg-secondary-container/20 rounded-full px-6 py-3 transition-all hover:translate-x-2" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">favorite</span>Thank You
+            </a>
+</nav>
+
+</aside>
+<!-- Main Content Canvas -->
+<main class="md:ml-80 transition-all duration-300">
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden transition-all duration-1000 opacity-100 translate-y-0" id="home">
+<div class="absolute inset-0 z-0 scale-105 transition-transform duration-[10000ms] ease-out hover:scale-100">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7FAEzOZNdeuAsNC-krwDAyW_u1TH38bstqsTG9v_61w_phdctdwi5DIOXKWNIYVmXi55nvzgD3iyVEIBTFL1Qv-abjwaj-Yc5npyKuOTTCkQCecomMzuEFXjrHJ6Tny7Vgs_50FtUnnE_JsboWwSZ7wjiPTVjqdAdsTAiPQenIlrYXscS_iNRfiLhjajsDRAgpaME_JOoePFBLFZDPNjzIHsRppGoW5qZr-Tz_1mQwpfwX5dvHjqw-Sl3hj4RIoT7q7fP0c-R_2nvc4w">
+<div class="absolute inset-0 bg-gradient-to-b from-surface/20 via-transparent to-surface/60"></div>
+</div>
+<div class="relative z-10 text-center px-margin-mobile glass-panel bg-surface/40 p-8 md:p-16 rounded-xl border border-outline-variant/30 max-w-2xl shadow-[0_30px_30px_-15px_rgba(212,175,55,0.08)]">
+
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-background mb-4">Boma &amp; Femi</h1>
+<div class="h-px w-24 bg-primary-container mx-auto mb-6"></div>
+<p class="font-headline-sm text-headline-sm text-secondary italic mb-8">18th July 2026</p>
+<p class="font-label-caps text-label-caps text-primary tracking-widest">Lagos, Nigeria</p>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-primary animate-bounce">
+<span class="font-label-caps text-[10px]">SCROLL</span>
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</section>
+<!-- Countdown Section -->
+<section class="py-section-gap bg-surface flex flex-col items-center transition-all duration-1000 opacity-100 translate-y-0">
+<div class="text-center mb-16">
+<h2 class="font-headline-md text-headline-md text-on-background">Until We Say I Do</h2>
+<p class="font-body-lg text-body-lg text-tertiary">We can't wait to celebrate with you</p>
+</div>
+<div class="flex gap-4 md:gap-12 px-margin-mobile" id="countdown">
+<div class="flex flex-col items-center">
+<span class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary-container" id="days">03</span>
+<span class="font-label-caps text-label-caps text-tertiary">DAYS</span>
+</div>
+<div class="text-primary-container font-display-lg text-4xl mt-4">:</div>
+<div class="flex flex-col items-center">
+<span class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary-container" id="hours">22</span>
+<span class="font-label-caps text-label-caps text-tertiary">HOURS</span>
+</div>
+<div class="text-primary-container font-display-lg text-4xl mt-4">:</div>
+<div class="flex flex-col items-center">
+<span class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary-container" id="minutes">57</span>
+<span class="font-label-caps text-label-caps text-tertiary">MINS</span>
+</div>
+</div>
+</section>
+<!-- Heartfelt Welcome / Intro Section -->
+<section class="px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto overflow-hidden transition-all duration-1000 opacity-100 translate-y-0" id="story">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="order-2 md:order-1 relative">
+<div class="absolute -top-10 -left-10 w-40 h-40 opacity-20 z-0">
+<!-- Floral Accent Placeholder -->
+<div class="w-full h-full bg-primary-container/20 rounded-full blur-3xl"></div>
+</div>
+<div class="relative z-10 p-1 bg-surface-container shadow-xl">
+<img class="matted-photo w-full aspect-[4/5] object-cover" data-alt="A cinematic, high-fashion shot of Boma and Femi walking hand-in-hand through a sun-drenched botanical garden. The image is framed as a matted photo with thin borders. The aesthetic is clean, luxurious, and romantic, with soft champagne and gold tones that match a premium light-mode digital wedding stationery design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCaKImtT-1LBskZou81iMUkd4yRqgdDr1FE2B7edlxZiuVRB3f0ytfa7cCoE7R6QLsl-d12-tbFb5QvIeIAtbvuvao5w1xSVcfEBGulYuHnMDrkcJRfG3ELajh3iaimlEDtvNiotJQeri-_Jhqojro5XCeH2NultMOSAsPK6W0oDJwPheauZziazPWisNdk79HYqtUlERx0Sc4CS1tYyAcZ4O17IkF4YwSCXpPCBq73fLnYyh4Wlv7v77a6CECbuLoU0pIGz6vzeOLu_g">
+</div>
+</div>
+<div class="order-1 md:order-2 space-y-8">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">The Beginning of Forever</span>
+<h2 class="font-display-lg text-headline-md md:text-headline-md text-on-background">Our Heartbeat</h2>
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed italic">
+                        "Welcome to our little corner of the internet. More than a wedding, this is a celebration of a journey that began with a shared laughter and has blossomed into a lifelong promise. We are so honored to have you join us as we embark on this new chapter of our story."
+                    </p>
+<p class="font-body-md text-body-md text-tertiary">
+                        From our very first date to the magical moment in the gardens, every step has led us here. We’ve designed this day to be an intimate reflection of our love, and your presence is the greatest gift we could ask for.
+                    </p>
+<div class="pt-4">
+<button class="px-8 py-4 border border-primary-container text-primary font-medium hover:bg-primary-container hover:text-on-primary-container transition-all duration-300">Read Our Full Story</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Wedding Details (Schedule Cards) -->
+<section class="py-section-gap bg-surface-container-low px-margin-mobile transition-all duration-1000 opacity-100 translate-y-0" id="venues">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-md text-headline-md text-on-background">The Celebration</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Church Ceremony -->
+<div class="glass-panel bg-white/60 p-8 border border-outline-variant/30 hover:shadow-lg transition-all duration-300 group">
+<div class="flex gap-6">
+<div class="timeline-line h-full group-hover:h-full transition-all duration-500"></div>
+<div class="space-y-4">
+<span class="material-symbols-outlined text-primary-container text-4xl">church</span>
+<h3 class="font-headline-sm text-headline-sm">Church Ceremony</h3>
+<p class="font-label-caps text-label-caps text-primary">11:00pm — 1:00pm</p>
+<p class="font-body-md text-on-surface-variant text-center">@</p><div class="">Winners Chapel, Egbeda, Lagos, Nigeria</div><p class=""></p>
+</div>
+</div>
+</div>
+<!-- Reception -->
+<div class="glass-panel bg-white/60 p-8 border border-outline-variant/30 hover:shadow-lg transition-all duration-300 group">
+<div class="flex gap-6">
+<div class="timeline-line h-full group-hover:h-full transition-all duration-500"></div>
+<div class="space-y-4">
+<span class="material-symbols-outlined text-primary-container text-4xl">restaurant</span>
+<h3 class="font-headline-sm text-headline-sm">Reception Party</h3>
+<p class="font-label-caps text-label-caps text-primary">2:00pm — 7:00pm</p>
+<p class="font-body-md text-on-surface-variant"></p><div class="">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @</div><div class="">Pertinence Hall</div><div class="text-center">Join us for a feast, toasts, and dancing.</div><p></p>
+</div>
+</div>
+</div>
+<!-- After Party -->
+
+</div>
+</div>
+</section>
+<!-- Footer Shell -->
+<footer class="w-full py-12 bg-surface-container-lowest border-t border-outline-variant/30">
+<div class="flex flex-col items-center justify-center gap-6 w-full px-margin-mobile text-center">
+<h2 class="font-display-lg text-headline-sm text-primary">Boma &amp; Femi</h2>
+<div class="flex gap-8">
+
+<a class="font-label-caps text-label-caps text-tertiary-fixed-dim hover:text-primary-container transition-colors" href="#">Contact Us</a>
+
+</div>
+<p class="font-label-caps text-label-caps text-tertiary opacity-100">© Boma &amp; Femi. Designed by Soiree Events</p>
+</div>
+</footer>
+</main>
+<!-- FAB (Suppressed on Home, but useful for secondary interactions) -->
+<button class="fixed bottom-8 right-8 w-16 h-16 bg-primary-container text-on-primary-container rounded-full shadow-xl flex items-center justify-center z-[70] hover:scale-110 active:scale-95 transition-all">
+
+</button>
+<script>
+        // Menu Toggle for Mobile
+        const menuBtn = document.getElementById('menuToggle');
+        const sideNav = document.getElementById('sideNav');
+        let isOpen = false;
+
+        menuBtn.addEventListener('click', () => {
+            isOpen = !isOpen;
+            if (isOpen) {
+                sideNav.classList.remove('-translate-x-full');
+                sideNav.classList.add('translate-x-0', 'flex');
+                sideNav.classList.remove('hidden');
+            } else {
+                sideNav.classList.add('-translate-x-full');
+                sideNav.classList.remove('translate-x-0');
+            }
+        });
+
+        // Countdown Timer Logic
+        const targetDate = new Date('July 18, 2026 11:00:00').getTime();
+
+        const updateCountdown = () => {
+            const now = new Date().getTime();
+            const diff = targetDate - now;
+
+            const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+
+            document.getElementById('days').innerText = d.toString().padStart(2, '0');
+            document.getElementById('hours').innerText = h.toString().padStart(2, '0');
+            document.getElementById('minutes').innerText = m.toString().padStart(2, '0');
+        };
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Parallax-ish Fade in on Scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+<script class="">
+  const sidebar = document.getElementById('sideNav');
+  const collapseBtn = document.getElementById('sidebarCollapse');
+  const mainContent = document.querySelector('main');
+  const icon = collapseBtn.querySelector('.material-symbols-outlined');
+  let isCollapsed = false;
+
+  collapseBtn.addEventListener('click', () => {
+    isCollapsed = !isCollapsed;
+    if (isCollapsed) {
+      sidebar.classList.add('-translate-x-[calc(100%-2rem)]');
+      sidebar.classList.remove('md:translate-x-0');
+      mainContent.classList.remove('md:ml-80');
+      mainContent.classList.add('md:ml-8');
+      icon.textContent = 'chevron_right';
+    } else {
+      sidebar.classList.remove('-translate-x-[calc(100%-2rem)]');
+      sidebar.classList.add('md:translate-x-0');
+      mainContent.classList.add('md:ml-80');
+      mainContent.classList.remove('md:ml-8');
+      icon.textContent = 'chevron_left';
+    }
+  });
+</script></body></html>

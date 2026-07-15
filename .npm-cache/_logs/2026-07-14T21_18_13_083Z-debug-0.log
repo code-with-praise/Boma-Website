@@ -1,0 +1,39 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.11.1
+2 info using node@v25.8.2
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\HP\Downloads\Boma-Website-main\.npmrc
+5 silly config load:file:C:\Users\HP\.npmrc
+6 silly config load:file:C:\Users\HP\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm install
+8 verbose argv "install" "--cache" ".npm-cache"
+9 verbose logfile logs-max:10 dir:C:\Users\HP\Downloads\Boma-Website-main\.npm-cache\_logs\2026-07-14T21_18_13_083Z-
+10 verbose logfile C:\Users\HP\Downloads\Boma-Website-main\.npm-cache\_logs\2026-07-14T21_18_13_083Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:2348810240 maxSize:587202560 maxEntrySize:293601280
+13 silly idealTree buildDeps
+14 silly reify moves {}
+15 verbose stack Error: Could not read package.json: Error: ENOENT: no such file or directory, open 'C:\Users\HP\Downloads\Boma-Website-main\package.json'
+15 verbose stack     at async open (node:internal/fs/promises:639:25)
+15 verbose stack     at async readFile (node:internal/fs/promises:1287:14)
+15 verbose stack     at async read (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\package-json\lib\read-package.js:9:18)
+15 verbose stack     at async PackageJson.load (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\package-json\lib\index.js:131:31)
+15 verbose stack     at async PackageJson.normalize (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\package-json\lib\index.js:117:5)
+15 verbose stack     at async runScript (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\run-script\lib\run-script.js:11:28)
+15 verbose stack     at async Install.exec (C:\Program Files\nodejs\node_modules\npm\lib\commands\install.js:159:9)
+15 verbose stack     at async Npm.exec (C:\Program Files\nodejs\node_modules\npm\lib\npm.js:193:9)
+15 verbose stack     at async module.exports (C:\Program Files\nodejs\node_modules\npm\lib\cli\entry.js:67:5)
+16 error code ENOENT
+17 error syscall open
+18 error path C:\Users\HP\Downloads\Boma-Website-main\package.json
+19 error errno -4058
+20 error enoent Could not read package.json: Error: ENOENT: no such file or directory, open 'C:\Users\HP\Downloads\Boma-Website-main\package.json'
+21 error enoent This is related to npm not being able to find a file.
+21 error enoent
+22 verbose cwd C:\Users\HP\Downloads\Boma-Website-main
+23 verbose os Windows_NT 10.0.26200
+24 verbose node v25.8.2
+25 verbose npm  v11.11.1
+26 verbose exit -4058
+27 verbose code -4058
+28 error A complete log of this run can be found in: C:\Users\HP\Downloads\Boma-Website-main\.npm-cache\_logs\2026-07-14T21_18_13_083Z-debug-0.log
