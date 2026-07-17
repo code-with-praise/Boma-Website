@@ -242,10 +242,23 @@ button {
   padding-right: var(--margin-mobile);
 }
 
-@media (min-width: 768px) {
-  .container {
-    padding-left: var(--margin-desktop);
-    padding-right: var(--margin-desktop);
+@media (max-width: 767px) {
+  .hero__image,
+  .food-hero__image,
+  .thank-you__image {
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  .gallery-item__img,
+  .food-category__image,
+  .bridal-card__image,
+  .timeline__image,
+  .venue-card img,
+  .heartbeat__photo {
+    object-fit: contain;
+    object-position: center;
+    background: var(--surface-container-low);
   }
 }
 
@@ -255,11 +268,16 @@ button {
 }
 
 @media (max-width: 767px) {
-  .section-padding {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  .gallery-item__img,
+  .bridal-card__image {
+    object-fit: cover;
+    object-position: center top;
   }
 
+  .gallery-item__img {
+    min-height: 320px;
+  }
+}
   .display-lg {
     font-size: 40px;
     line-height: 48px;
